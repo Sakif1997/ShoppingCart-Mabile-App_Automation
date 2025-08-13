@@ -77,7 +77,6 @@ This project demonstrates complete automation of a demo mobile shopping cart app
   [Live report link](https://mydemomobileshopingapp.netlify.app/)  
   [Report overview screenshot](https://drive.google.com/file/d/1C4Vwk9wPmNHOsXadmh6bLeEfoQoEkJb5/view?usp=drive_link)
 
-> These resources provide a complete walkthrough of the mobile app automation lifecycle, from initial overview to final test reports.
 
 ## 🚀 Getting Started
 

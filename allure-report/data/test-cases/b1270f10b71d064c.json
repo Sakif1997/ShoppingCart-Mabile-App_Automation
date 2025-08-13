@@ -1,0 +1,113 @@
+{
+  "uid" : "b1270f10b71d064c",
+  "name" : "Scenario 8: Go to Cart\nScenario 9: Decrease 1st Product\nScenario 10: Increase 3rd Product\nScenario 11: Delete 2nd Product\nScenario 12: Proceed to checkout",
+  "fullName" : "TestCases.CartOperation.CartOperate",
+  "historyId" : "2ff189d3b124bb9060a60eb0c51b3fda",
+  "time" : {
+    "start" : 1755119377547,
+    "stop" : 1755119393199,
+    "duration" : 15652
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755119298590,
+      "stop" : 1755119314536,
+      "duration" : 15946
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7d5b69bb51256ed7",
+      "name" : "Cart Product list",
+      "source" : "7d5b69bb51256ed7.png",
+      "type" : "image/png",
+      "size" : 719838
+    }, {
+      "uid" : "99e3b9632255c559",
+      "name" : "Final Product list",
+      "source" : "99e3b9632255c559.png",
+      "type" : "image/png",
+      "size" : 546888
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755119449354,
+      "stop" : 1755119449891,
+      "duration" : 537
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.CartOperation"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.CartOperation"
+  }, {
+    "name" : "testMethod",
+    "value" : "CartOperate"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.CartOperation"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "10176@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b1270f10b71d064c.json",
+  "parameterValues" : [ ]
+}

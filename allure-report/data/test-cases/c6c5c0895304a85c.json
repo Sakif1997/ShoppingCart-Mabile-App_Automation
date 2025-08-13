@@ -1,0 +1,113 @@
+{
+  "uid" : "c6c5c0895304a85c",
+  "name" : "Scenario 14: Verify Logout",
+  "fullName" : "TestCases.LogOut.loggedOut",
+  "historyId" : "bd5bc7e6838190ffee0ff5bcf74fce80",
+  "time" : {
+    "start" : 1755119692685,
+    "stop" : 1755119701044,
+    "duration" : 8359
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755119565487,
+      "stop" : 1755119583831,
+      "duration" : 18344
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c0650348328c8eac",
+      "name" : "logout",
+      "source" : "c0650348328c8eac.png",
+      "type" : "image/png",
+      "size" : 95149
+    }, {
+      "uid" : "d15cf94eb19681f2",
+      "name" : "logout Successful Mesage",
+      "source" : "d15cf94eb19681f2.png",
+      "type" : "image/png",
+      "size" : 104844
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755119701134,
+      "stop" : 1755119701925,
+      "duration" : 791
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.LogOut"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.LogOut"
+  }, {
+    "name" : "testMethod",
+    "value" : "loggedOut"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.LogOut"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "7288@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c6c5c0895304a85c.json",
+  "parameterValues" : [ ]
+}

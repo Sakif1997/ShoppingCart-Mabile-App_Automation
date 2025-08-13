@@ -1,0 +1,15 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Aug 14 03:33:18 BDT 2025","Thu Aug 14 03:33:54 BDT 2025","35904","Suite","Test","TestCases.CheckOut","TestCases.CheckOut","checkedOut","Scenario 13: Checkout process
+1. Verify check Information taken clearly
+2. Verify Payment Information taken clearly
+3. Verify Place Order Successfully",""
+"passed","Thu Aug 14 03:33:02 BDT 2025","Thu Aug 14 03:33:18 BDT 2025","15805","Suite","Test","TestCases.CartOperation","TestCases.CartOperation","CartOperate","Scenario 8: Go to Cart
+Scenario 9: Decrease 1st Product
+Scenario 10: Increase 3rd Product
+Scenario 11: Delete 2nd Product
+Scenario 12: Proceed to checkout",""
+"broken","Wed Aug 13 05:01:41 BDT 2025","Wed Aug 13 05:01:41 BDT 2025","37","Default suite","Default test","Utilities.SorToAddToCartProduct","Utilities.SorToAddToCartProduct","login","login",""
+"passed","Thu Aug 14 03:33:54 BDT 2025","Thu Aug 14 03:34:02 BDT 2025","8049","Suite","Test","TestCases.LogOut","TestCases.LogOut","loggedOut","Scenario 14: Verify Logout",""
+"passed","Thu Aug 14 03:32:11 BDT 2025","Thu Aug 14 03:32:27 BDT 2025","16513","Suite","Test","TestCases.SortingOperation","TestCases.SortingOperation","sort","scenario 2: Verify Catalog Dashbord appearedScencario 3: Verify Sort By name working or notScenario 4: Verify Sort By price working or not",""
+"passed","Thu Aug 14 03:32:27 BDT 2025","Thu Aug 14 03:33:02 BDT 2025","35226","Suite","Test","TestCases.AddToCart","TestCases.AddToCart","AddProductToCart","Scenario 5 to 7: Verify prodct correctly added to cart Queue",""
+"passed","Thu Aug 14 03:31:59 BDT 2025","Thu Aug 14 03:32:10 BDT 2025","10844","Suite","Test","TestCases.login","TestCases.login","loggedIn","Scenario 1: Verify login operation successfully",""

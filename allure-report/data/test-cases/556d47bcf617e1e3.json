@@ -1,0 +1,125 @@
+{
+  "uid" : "556d47bcf617e1e3",
+  "name" : "Scenario 5 to 7: Verify prodct correctly added to cart Queue",
+  "fullName" : "TestCases.AddToCart.AddProductToCart",
+  "historyId" : "6c6ae87673f00be366f29b7b5f6a78ae",
+  "time" : {
+    "start" : 1755119979879,
+    "stop" : 1755120012958,
+    "duration" : 33079
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755119939179,
+      "stop" : 1755119954672,
+      "duration" : 15493
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "24f0aa6fa747b12b",
+      "name" : "Product Catalog",
+      "source" : "24f0aa6fa747b12b.png",
+      "type" : "image/png",
+      "size" : 1086829
+    }, {
+      "uid" : "d98e20b82f9757c",
+      "name" : "Quantity added for 2nd product",
+      "source" : "d98e20b82f9757c.png",
+      "type" : "image/png",
+      "size" : 779879
+    }, {
+      "uid" : "75dc8dbfffe5ff2d",
+      "name" : "Quantity added for 3rd product",
+      "source" : "75dc8dbfffe5ff2d.png",
+      "type" : "image/png",
+      "size" : 333606
+    }, {
+      "uid" : "ba200aa6e122cd53",
+      "name" : "Quantity added for 5th product",
+      "source" : "ba200aa6e122cd53.png",
+      "type" : "image/png",
+      "size" : 397204
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755120071390,
+      "stop" : 1755120071860,
+      "duration" : 470
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.AddToCart"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.AddToCart"
+  }, {
+    "name" : "testMethod",
+    "value" : "AddProductToCart"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.AddToCart"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "8584@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "556d47bcf617e1e3.json",
+  "parameterValues" : [ ]
+}

@@ -1,5 +1,101 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "DESKTOP-HCMDDC7",
+    "children" : [ {
+      "name" : "1068@DESKTOP-HCMDDC7.main(1)",
+      "children" : [ {
+        "name" : "Scenario 13: Checkout process\n1. Verify check Information taken clearly\n2. Verify Payment Information taken clearly\n3. Verify Place Order Successfully",
+        "uid" : "ad8f84de80f8449b",
+        "parentUid" : "949f2218f807294a43d68048e0c0c96e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1755120798606,
+          "stop" : 1755120834510,
+          "duration" : 35904
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario 8: Go to Cart\nScenario 9: Decrease 1st Product\nScenario 10: Increase 3rd Product\nScenario 11: Delete 2nd Product\nScenario 12: Proceed to checkout",
+        "uid" : "12f858b0b3f35bdf",
+        "parentUid" : "949f2218f807294a43d68048e0c0c96e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1755120782789,
+          "stop" : 1755120798594,
+          "duration" : 15805
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario 14: Verify Logout",
+        "uid" : "1970bf68fdfcf9a9",
+        "parentUid" : "949f2218f807294a43d68048e0c0c96e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1755120834527,
+          "stop" : 1755120842576,
+          "duration" : 8049
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "scenario 2: Verify Catalog Dashbord appearedScencario 3: Verify Sort By name working or notScenario 4: Verify Sort By price working or not",
+        "uid" : "b15194937c373108",
+        "parentUid" : "949f2218f807294a43d68048e0c0c96e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1755120731017,
+          "stop" : 1755120747530,
+          "duration" : 16513
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario 5 to 7: Verify prodct correctly added to cart Queue",
+        "uid" : "33b7d44df5270700",
+        "parentUid" : "949f2218f807294a43d68048e0c0c96e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1755120747550,
+          "stop" : 1755120782776,
+          "duration" : 35226
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario 1: Verify login operation successfully",
+        "uid" : "aac9001806bbd8d1",
+        "parentUid" : "949f2218f807294a43d68048e0c0c96e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1755120719973,
+          "stop" : 1755120730817,
+          "duration" : 10844
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "949f2218f807294a43d68048e0c0c96e"
+    }, {
+      "name" : "13024@DESKTOP-HCMDDC7.main(1)",
+      "children" : [ {
+        "name" : "login",
+        "uid" : "592929ba5d6d9ee0",
+        "parentUid" : "bf57e70af1e2095e855eadbb41a75d95",
+        "status" : "broken",
+        "time" : {
+          "start" : 1755039701235,
+          "stop" : 1755039701272,
+          "duration" : 37
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bf57e70af1e2095e855eadbb41a75d95"
+    } ],
+    "uid" : "87177cfd81531c20dadd9d12dc55f190"
+  } ]
 }

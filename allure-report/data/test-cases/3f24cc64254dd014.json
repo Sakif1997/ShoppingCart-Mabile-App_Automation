@@ -1,0 +1,107 @@
+{
+  "uid" : "3f24cc64254dd014",
+  "name" : "Scenario 1: Verify login operation successfully",
+  "fullName" : "TestCases.login.loggedIn",
+  "historyId" : "da8bbb805b30000a6aab10d8f9d649bf",
+  "time" : {
+    "start" : 1755119584063,
+    "stop" : 1755119594463,
+    "duration" : 10400
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755119565487,
+      "stop" : 1755119583831,
+      "duration" : 18344
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f4aa3b3a0175487b",
+      "name" : "login Page",
+      "source" : "f4aa3b3a0175487b.png",
+      "type" : "image/png",
+      "size" : 110784
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755119701134,
+      "stop" : 1755119701925,
+      "duration" : 791
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "testMethod",
+    "value" : "loggedIn"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "7288@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3f24cc64254dd014.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,91 @@
+{
+  "uid" : "48febf5bc951a5c4",
+  "name" : "Scenario 1: Verify login operation successfully",
+  "fullName" : "TestCases.login.loggedIn",
+  "historyId" : "da8bbb805b30000a6aab10d8f9d649bf",
+  "time" : {
+    "start" : 1755088913420,
+    "stop" : 1755088927167,
+    "duration" : 13747
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755088882774,
+      "stop" : 1755088913116,
+      "duration" : 30342
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755089033924,
+      "stop" : 1755089036252,
+      "duration" : 2328
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "testMethod",
+    "value" : "loggedIn"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "11508@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "48febf5bc951a5c4.json",
+  "parameterValues" : [ ]
+}

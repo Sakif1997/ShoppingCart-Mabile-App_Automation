@@ -1,0 +1,91 @@
+{
+  "uid" : "627b13f2cb0c90da",
+  "name" : "Scenario 1: Verify login operation successfully",
+  "fullName" : "TestCases.login.loggedIn",
+  "historyId" : "da8bbb805b30000a6aab10d8f9d649bf",
+  "time" : {
+    "start" : 1755089893711,
+    "stop" : 1755089905677,
+    "duration" : 11966
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755089860730,
+      "stop" : 1755089893304,
+      "duration" : 32574
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755090028702,
+      "stop" : 1755090030953,
+      "duration" : 2251
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "testMethod",
+    "value" : "loggedIn"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "7708@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "627b13f2cb0c90da.json",
+  "parameterValues" : [ ]
+}

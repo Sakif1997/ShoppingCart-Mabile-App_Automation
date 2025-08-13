@@ -68,15 +68,6 @@ public class CheckOutOperation extends Methods{
 
 
 		
-		
-		
-
-		
-		
-
-		
-
-		
 	}
 
 

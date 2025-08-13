@@ -147,20 +147,16 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.CartOperation</span>
+              <span class="class-name">TestCases.LogOut</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CartOperate">
-                  </a> <!-- CartOperate -->
-                  <span class="method-name">CartOperate</span>
+                  <a name="loggedOut">
+                  </a> <!-- loggedOut -->
+                  <span class="method-name">loggedOut</span>
                   <em>
-(Scenario 8: Go to Cart
-Scenario 9: Decrease 1st Product
-Scenario 10: Increase 3rd Product
-Scenario 11: Delete 2nd Product
-Scenario 12: Proceed to checkout)                  </em>
+(Scenario 14: Verify Logout)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +181,20 @@ Scenario 12: Proceed to checkout)                  </em>
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.login</span>
+              <span class="class-name">TestCases.CartOperation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loggedIn">
-                  </a> <!-- loggedIn -->
-                  <span class="method-name">loggedIn</span>
+                  <a name="CartOperate">
+                  </a> <!-- CartOperate -->
+                  <span class="method-name">CartOperate</span>
                   <em>
-(Scenario 1: Verify login operation successfully)                  </em>
+(Scenario 8: Go to Cart
+Scenario 9: Decrease 1st Product
+Scenario 10: Increase 3rd Product
+Scenario 11: Delete 2nd Product
+Scenario 12: Proceed to checkout)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,6 +222,23 @@ Scenario 12: Proceed to checkout)                  </em>
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">TestCases.login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loggedIn">
+                  </a> <!-- loggedIn -->
+                  <span class="method-name">loggedIn</span>
+                  <em>
+(Scenario 1: Verify login operation successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">TestCases.SortingOperation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -236,23 +253,6 @@ Scenario 12: Proceed to checkout)                  </em>
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.LogOut</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loggedOut">
-                  </a> <!-- loggedOut -->
-                  <span class="method-name">loggedOut</span>
-                  <em>
-(Scenario 14: Verify Logout)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -263,6 +263,9 @@ Scenario 12: Proceed to checkout)                  </em>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;io.qameta.allure.testng.AllureTestNg&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestCases.login&quot;/&gt;
@@ -314,27 +317,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkedOut')
 data.setCell(0, 2, 'TestCases.CheckOut')
-data.setCell(0, 3, 44584);
+data.setCell(0, 3, 35907);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'AddProductToCart')
 data.setCell(1, 2, 'TestCases.AddToCart')
-data.setCell(1, 3, 37793);
+data.setCell(1, 3, 35233);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CartOperate')
-data.setCell(2, 2, 'TestCases.CartOperation')
-data.setCell(2, 3, 18903);
+data.setCell(2, 1, 'sort')
+data.setCell(2, 2, 'TestCases.SortingOperation')
+data.setCell(2, 3, 16527);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loggedIn')
-data.setCell(3, 2, 'TestCases.login')
-data.setCell(3, 3, 12203);
+data.setCell(3, 1, 'CartOperate')
+data.setCell(3, 2, 'TestCases.CartOperation')
+data.setCell(3, 3, 15812);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'sort')
-data.setCell(4, 2, 'TestCases.SortingOperation')
-data.setCell(4, 3, 11628);
+data.setCell(4, 1, 'loggedIn')
+data.setCell(4, 2, 'TestCases.login')
+data.setCell(4, 3, 10995);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loggedOut')
 data.setCell(5, 2, 'TestCases.LogOut')
-data.setCell(5, 3, 9687);
+data.setCell(5, 3, 8061);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -358,7 +361,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.CartOperation</span>
+              <span class="ignored-class-name">TestCases.LogOut</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">quitDriver</span>
                 <br/>
@@ -369,6 +372,15 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCases.AddToCart</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+                <span class="ignored-method-name">SetupDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.CartOperation</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">SetupDriver</span>
                 <br/>
                 <span class="ignored-method-name">quitDriver</span>
@@ -378,27 +390,18 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCases.CheckOut</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">SetupDriver</span>
-                <br/>
                 <span class="ignored-method-name">quitDriver</span>
+                <br/>
+                <span class="ignored-method-name">SetupDriver</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCases.SortingOperation</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">quitDriver</span>
-                <br/>
                 <span class="ignored-method-name">SetupDriver</span>
                 <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.LogOut</span>
-              <div class="ignored-methods-div">
                 <span class="ignored-method-name">quitDriver</span>
-                <br/>
-                <span class="ignored-method-name">SetupDriver</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -417,49 +420,49 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">loggedIn</span>
-                <span class="method-start">32759 ms</span>
+                <span class="method-start">17737 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.SortingOperation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">sort</span>
-                <span class="method-start">45179 ms</span>
+                <span class="method-start">28922 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.AddToCart</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">AddProductToCart</span>
-                <span class="method-start">56810 ms</span>
+                <span class="method-start">45462 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.CartOperation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CartOperate</span>
-                <span class="method-start">94609 ms</span>
+                <span class="method-start">80700 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.CheckOut</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkedOut</span>
-                <span class="method-start">113517 ms</span>
+                <span class="method-start">96522 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.LogOut</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loggedOut</span>
-                <span class="method-start">158106 ms</span>
+                <span class="method-start">132434 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.login</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">167992 ms</span>
+                <span class="method-start">140596 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

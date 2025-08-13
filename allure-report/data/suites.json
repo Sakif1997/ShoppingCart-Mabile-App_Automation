@@ -1,5 +1,133 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Default suite",
+    "children" : [ {
+      "name" : "Default test",
+      "children" : [ {
+        "name" : "Utilities.SorToAddToCartProduct",
+        "children" : [ {
+          "name" : "login",
+          "uid" : "592929ba5d6d9ee0",
+          "parentUid" : "6e997ff4eee920e22db9ac65ab753fc5",
+          "status" : "broken",
+          "time" : {
+            "start" : 1755039701235,
+            "stop" : 1755039701272,
+            "duration" : 37
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "6e997ff4eee920e22db9ac65ab753fc5"
+      } ],
+      "uid" : "848117670d75f6868e681771989ad50e"
+    } ],
+    "uid" : "2c8837b97293ea01a164a5cd7048ad56"
+  }, {
+    "name" : "Suite",
+    "children" : [ {
+      "name" : "Test",
+      "children" : [ {
+        "name" : "TestCases.login",
+        "children" : [ {
+          "name" : "Scenario 1: Verify login operation successfully",
+          "uid" : "aac9001806bbd8d1",
+          "parentUid" : "a11fb7482191c2b87f92e7aa9892fd0e",
+          "status" : "passed",
+          "time" : {
+            "start" : 1755120719973,
+            "stop" : 1755120730817,
+            "duration" : 10844
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a11fb7482191c2b87f92e7aa9892fd0e"
+      }, {
+        "name" : "TestCases.SortingOperation",
+        "children" : [ {
+          "name" : "scenario 2: Verify Catalog Dashbord appearedScencario 3: Verify Sort By name working or notScenario 4: Verify Sort By price working or not",
+          "uid" : "b15194937c373108",
+          "parentUid" : "70f02fcae93b6e87f70c53f814776842",
+          "status" : "passed",
+          "time" : {
+            "start" : 1755120731017,
+            "stop" : 1755120747530,
+            "duration" : 16513
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "70f02fcae93b6e87f70c53f814776842"
+      }, {
+        "name" : "TestCases.AddToCart",
+        "children" : [ {
+          "name" : "Scenario 5 to 7: Verify prodct correctly added to cart Queue",
+          "uid" : "33b7d44df5270700",
+          "parentUid" : "5c478dd2f281d0f897ed854d8f6e7ad7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1755120747550,
+            "stop" : 1755120782776,
+            "duration" : 35226
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5c478dd2f281d0f897ed854d8f6e7ad7"
+      }, {
+        "name" : "TestCases.CartOperation",
+        "children" : [ {
+          "name" : "Scenario 8: Go to Cart\nScenario 9: Decrease 1st Product\nScenario 10: Increase 3rd Product\nScenario 11: Delete 2nd Product\nScenario 12: Proceed to checkout",
+          "uid" : "12f858b0b3f35bdf",
+          "parentUid" : "68e90409942142ad2b4ec1b2d34e8962",
+          "status" : "passed",
+          "time" : {
+            "start" : 1755120782789,
+            "stop" : 1755120798594,
+            "duration" : 15805
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "68e90409942142ad2b4ec1b2d34e8962"
+      }, {
+        "name" : "TestCases.CheckOut",
+        "children" : [ {
+          "name" : "Scenario 13: Checkout process\n1. Verify check Information taken clearly\n2. Verify Payment Information taken clearly\n3. Verify Place Order Successfully",
+          "uid" : "ad8f84de80f8449b",
+          "parentUid" : "e00ac74142177fe99cb63b4c06fc25a9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1755120798606,
+            "stop" : 1755120834510,
+            "duration" : 35904
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e00ac74142177fe99cb63b4c06fc25a9"
+      }, {
+        "name" : "TestCases.LogOut",
+        "children" : [ {
+          "name" : "Scenario 14: Verify Logout",
+          "uid" : "1970bf68fdfcf9a9",
+          "parentUid" : "ef937d44a9f64a81930f33d260181e1d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1755120834527,
+            "stop" : 1755120842576,
+            "duration" : 8049
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ef937d44a9f64a81930f33d260181e1d"
+      } ],
+      "uid" : "7314231e84d67a341867b5c9d3f928d2"
+    } ],
+    "uid" : "29f4dcc45a0e26cd7c7462063cee854b"
+  } ]
 }

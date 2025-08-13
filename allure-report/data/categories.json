@@ -1,5 +1,25 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Cannot invoke \"io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)\" because \"MobileConfig.DriverSetup.driver\" is null",
+      "children" : [ {
+        "name" : "login",
+        "uid" : "592929ba5d6d9ee0",
+        "parentUid" : "933b62a6f05ad1da67d25eecc834e946",
+        "status" : "broken",
+        "time" : {
+          "start" : 1755039701235,
+          "stop" : 1755039701272,
+          "duration" : 37
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "933b62a6f05ad1da67d25eecc834e946"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

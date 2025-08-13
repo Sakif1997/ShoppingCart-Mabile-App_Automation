@@ -1,0 +1,91 @@
+{
+  "uid" : "c24af5558d694073",
+  "name" : "sort",
+  "fullName" : "TestCases.SortingOperation.sort",
+  "historyId" : "1ddc39a859baa7abe00d96c8c90c0d3f",
+  "time" : {
+    "start" : 1755043127120,
+    "stop" : 1755043149117,
+    "duration" : 21997
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755043110733,
+      "stop" : 1755043126897,
+      "duration" : 16164
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755043149286,
+      "stop" : 1755043149884,
+      "duration" : 598
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "testMethod",
+    "value" : "sort"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default suite"
+  }, {
+    "name" : "suite",
+    "value" : "Default test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "5204@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c24af5558d694073.json",
+  "parameterValues" : [ ]
+}

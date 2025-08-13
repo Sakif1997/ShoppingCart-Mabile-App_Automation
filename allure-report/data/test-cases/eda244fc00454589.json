@@ -1,0 +1,125 @@
+{
+  "uid" : "eda244fc00454589",
+  "name" : "sort",
+  "fullName" : "TestCases.SortingOperation.sort",
+  "historyId" : "1ddc39a859baa7abe00d96c8c90c0d3f",
+  "time" : {
+    "start" : 1755067617032,
+    "stop" : 1755067675992,
+    "duration" : 58960
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755067594407,
+      "stop" : 1755067616762,
+      "duration" : 22355
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ded1d74d10814745",
+      "name" : "Product Catalog",
+      "source" : "ded1d74d10814745.png",
+      "type" : "image/png",
+      "size" : 1085564
+    }, {
+      "uid" : "8a04f109853fef88",
+      "name" : "Quantity added for 2nd product",
+      "source" : "8a04f109853fef88.png",
+      "type" : "image/png",
+      "size" : 778749
+    }, {
+      "uid" : "645ddf8e3f68542a",
+      "name" : "Quantity added for 3rd product",
+      "source" : "645ddf8e3f68542a.png",
+      "type" : "image/png",
+      "size" : 332124
+    }, {
+      "uid" : "e7d823818f258da8",
+      "name" : "Quantity added for 5th product",
+      "source" : "e7d823818f258da8.png",
+      "type" : "image/png",
+      "size" : 395746
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755067676226,
+      "stop" : 1755067677786,
+      "duration" : 1560
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "testMethod",
+    "value" : "sort"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default suite"
+  }, {
+    "name" : "suite",
+    "value" : "Default test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "18468@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eda244fc00454589.json",
+  "parameterValues" : [ ]
+}

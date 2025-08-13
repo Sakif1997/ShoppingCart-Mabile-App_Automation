@@ -1,1 +1,71 @@
-[ ]
+[ {
+  "uid" : "ad8f84de80f8449b",
+  "name" : "Scenario 13: Checkout process\n1. Verify check Information taken clearly\n2. Verify Payment Information taken clearly\n3. Verify Place Order Successfully",
+  "time" : {
+    "start" : 1755120798606,
+    "stop" : 1755120834510,
+    "duration" : 35904
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "12f858b0b3f35bdf",
+  "name" : "Scenario 8: Go to Cart\nScenario 9: Decrease 1st Product\nScenario 10: Increase 3rd Product\nScenario 11: Delete 2nd Product\nScenario 12: Proceed to checkout",
+  "time" : {
+    "start" : 1755120782789,
+    "stop" : 1755120798594,
+    "duration" : 15805
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "592929ba5d6d9ee0",
+  "name" : "login",
+  "time" : {
+    "start" : 1755039701235,
+    "stop" : 1755039701272,
+    "duration" : 37
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1970bf68fdfcf9a9",
+  "name" : "Scenario 14: Verify Logout",
+  "time" : {
+    "start" : 1755120834527,
+    "stop" : 1755120842576,
+    "duration" : 8049
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b15194937c373108",
+  "name" : "scenario 2: Verify Catalog Dashbord appearedScencario 3: Verify Sort By name working or notScenario 4: Verify Sort By price working or not",
+  "time" : {
+    "start" : 1755120731017,
+    "stop" : 1755120747530,
+    "duration" : 16513
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33b7d44df5270700",
+  "name" : "Scenario 5 to 7: Verify prodct correctly added to cart Queue",
+  "time" : {
+    "start" : 1755120747550,
+    "stop" : 1755120782776,
+    "duration" : 35226
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aac9001806bbd8d1",
+  "name" : "Scenario 1: Verify login operation successfully",
+  "time" : {
+    "start" : 1755120719973,
+    "stop" : 1755120730817,
+    "duration" : 10844
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

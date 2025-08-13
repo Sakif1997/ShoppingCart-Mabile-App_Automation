@@ -1,0 +1,200 @@
+{
+  "uid" : "aac9001806bbd8d1",
+  "name" : "Scenario 1: Verify login operation successfully",
+  "fullName" : "TestCases.login.loggedIn",
+  "historyId" : "da8bbb805b30000a6aab10d8f9d649bf",
+  "time" : {
+    "start" : 1755120719973,
+    "stop" : 1755120730817,
+    "duration" : 10844
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755120702098,
+      "stop" : 1755120719745,
+      "duration" : 17647
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3d38c503df42b95f",
+      "name" : "login Page",
+      "source" : "3d38c503df42b95f.png",
+      "type" : "image/png",
+      "size" : 111195
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755120842678,
+      "stop" : 1755120843741,
+      "duration" : 1063
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "testMethod",
+    "value" : "loggedIn"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "1068@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b8dabc0512260d4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755119954846,
+        "stop" : 1755119965333,
+        "duration" : 10487
+      }
+    }, {
+      "uid" : "3f24cc64254dd014",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755119584063,
+        "stop" : 1755119594463,
+        "duration" : 10400
+      }
+    }, {
+      "uid" : "7692d324fd6a2857",
+      "status" : "broken",
+      "statusDetails" : "An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-HCMDDC7', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, databaseEnabled: false, desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, platformName: android}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Mi A1, deviceName: 5776660a9905, deviceScreenDensity: 408, deviceScreenSize: 1080x1920, deviceUDID: 5776660a9905, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 61, takesScreenshot: true, viewportRect: {height: 1859, left: 0, top: 61, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: 1acb8a7a-683b-4679-a859-86b92f1435a7\n*** Element info: {Using=xpath, value=//android.widget.EditText[@content-desc=\"Username input field\"]}",
+      "time" : {
+        "start" : 1755119512982,
+        "stop" : 1755119519526,
+        "duration" : 6544
+      }
+    }, {
+      "uid" : "8772c54e13664e6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755119314710,
+        "stop" : 1755119326306,
+        "duration" : 11596
+      }
+    }, {
+      "uid" : "6c5d655897fef7ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755119017289,
+        "stop" : 1755119028430,
+        "duration" : 11141
+      }
+    }, {
+      "uid" : "dc199c38119d0844",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755117819756,
+        "stop" : 1755117831716,
+        "duration" : 11960
+      }
+    }, {
+      "uid" : "627b13f2cb0c90da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755089893711,
+        "stop" : 1755089905677,
+        "duration" : 11966
+      }
+    }, {
+      "uid" : "48febf5bc951a5c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755088913420,
+        "stop" : 1755088927167,
+        "duration" : 13747
+      }
+    }, {
+      "uid" : "908ec13d39d85a24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755041829966,
+        "stop" : 1755041840285,
+        "duration" : 10319
+      }
+    }, {
+      "uid" : "c6b249029798a854",
+      "status" : "broken",
+      "statusDetails" : "org.eclipse.wst.xml.xpath2.processor.XPathParserException: JFlex lexer error: Unknown character at line 1 col 40: \\\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-HCMDDC7', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, databaseEnabled: false, desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, platformName: android}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Mi A1, deviceName: 5776660a9905, deviceScreenDensity: 408, deviceScreenSize: 1080x1920, deviceUDID: 5776660a9905, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 61, takesScreenshot: true, viewportRect: {height: 1859, left: 0, top: 61, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: c6b97f3a-6571-4936-b84a-2276e9ca49d7\n*** Element info: {Using=xpath, value=//android.view.ViewGroup[@content-desc=\\\"open menu\\\"]/android.widget.ImageView}",
+      "time" : {
+        "start" : 1755040198093,
+        "stop" : 1755040199326,
+        "duration" : 1233
+      }
+    }, {
+      "uid" : "ec8a4e283dae6f6a",
+      "status" : "broken",
+      "statusDetails" : "org.eclipse.wst.xml.xpath2.processor.XPathParserException: JFlex lexer error: Unknown character at line 1 col 40: \\\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-HCMDDC7', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, databaseEnabled: false, desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, platformName: android}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Mi A1, deviceName: 5776660a9905, deviceScreenDensity: 408, deviceScreenSize: 1080x1920, deviceUDID: 5776660a9905, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 61, takesScreenshot: true, viewportRect: {height: 1859, left: 0, top: 61, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: fd58fac4-fa14-4793-889c-ab6c265ba315\n*** Element info: {Using=xpath, value=//android.view.ViewGroup[@content-desc=\\\"open menu\\\"]/android.widget.ImageView}",
+      "time" : {
+        "start" : 1755040130895,
+        "stop" : 1755040132082,
+        "duration" : 1187
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "aac9001806bbd8d1.json",
+  "parameterValues" : [ ]
+}

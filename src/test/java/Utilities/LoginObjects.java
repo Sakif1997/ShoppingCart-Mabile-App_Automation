@@ -17,6 +17,7 @@ public class LoginObjects extends Methods {
 		Thread.sleep(2000);
 		FieldValue(Username_in, "bob@example.com");
 		FieldValue(Pass_in, "10203040");
+		takeScreenshot("login Page");
 		Thread.sleep(2000);
 		clickElement(LoginButton_c);
 	}

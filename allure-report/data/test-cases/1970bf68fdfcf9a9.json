@@ -1,0 +1,173 @@
+{
+  "uid" : "1970bf68fdfcf9a9",
+  "name" : "Scenario 14: Verify Logout",
+  "fullName" : "TestCases.LogOut.loggedOut",
+  "historyId" : "bd5bc7e6838190ffee0ff5bcf74fce80",
+  "time" : {
+    "start" : 1755120834527,
+    "stop" : 1755120842576,
+    "duration" : 8049
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755120702098,
+      "stop" : 1755120719745,
+      "duration" : 17647
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1867a22483972977",
+      "name" : "logout",
+      "source" : "1867a22483972977.png",
+      "type" : "image/png",
+      "size" : 94830
+    }, {
+      "uid" : "d89c14c3ef2dcf38",
+      "name" : "logout Successful Mesage",
+      "source" : "d89c14c3ef2dcf38.png",
+      "type" : "image/png",
+      "size" : 104584
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755120842678,
+      "stop" : 1755120843741,
+      "duration" : 1063
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.LogOut"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.LogOut"
+  }, {
+    "name" : "testMethod",
+    "value" : "loggedOut"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.LogOut"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "1068@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "31b82235cb19df8b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755120063292,
+        "stop" : 1755120071300,
+        "duration" : 8008
+      }
+    }, {
+      "uid" : "c6c5c0895304a85c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755119692685,
+        "stop" : 1755119701044,
+        "duration" : 8359
+      }
+    }, {
+      "uid" : "52db4cbd1b1bc4e7",
+      "status" : "broken",
+      "statusDetails" : "An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-HCMDDC7', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, databaseEnabled: false, desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, platformName: android}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Mi A1, deviceName: 5776660a9905, deviceScreenDensity: 408, deviceScreenSize: 1080x1920, deviceUDID: 5776660a9905, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 61, takesScreenshot: true, viewportRect: {height: 1859, left: 0, top: 61, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: 1acb8a7a-683b-4679-a859-86b92f1435a7\n*** Element info: {Using=xpath, value=//android.view.ViewGroup[@content-desc=\"open menu\"]}",
+      "time" : {
+        "start" : 1755119522874,
+        "stop" : 1755119522912,
+        "duration" : 38
+      }
+    }, {
+      "uid" : "9e1b98ace15e8a3c",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-HCMDDC7', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, databaseEnabled: false, desired: {appActivity: com.saucelabs.mydemoapp.rn...., appPackage: com.saucelabs.mydemoapp.rn, platformName: android}, deviceApiLevel: 28, deviceManufacturer: Xiaomi, deviceModel: Mi A1, deviceName: 5776660a9905, deviceScreenDensity: 408, deviceScreenSize: 1080x1920, deviceUDID: 5776660a9905, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.55, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 61, takesScreenshot: true, viewportRect: {height: 1859, left: 0, top: 61, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: c11a28b7-992b-465d-9139-069f4494e29c\n*** Element info: {Using=xpath, value=//android.view.ViewGroup[@content-desc=\"open menu\"]}",
+      "time" : {
+        "start" : 1755119429112,
+        "stop" : 1755119449238,
+        "duration" : 20126
+      }
+    }, {
+      "uid" : "5e7133b319640620",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755119127816,
+        "stop" : 1755119135869,
+        "duration" : 8053
+      }
+    }, {
+      "uid" : "19f503b9a3c7561f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755117933061,
+        "stop" : 1755117940978,
+        "duration" : 7917
+      }
+    }, {
+      "uid" : "5fcd436e52f71fa9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755090018825,
+        "stop" : 1755090028504,
+        "duration" : 9679
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1970bf68fdfcf9a9.json",
+  "parameterValues" : [ ]
+}

@@ -13,10 +13,12 @@ public class SortingConfiguration extends Methods {
 		clickElement(Sortingoption_c);
 		Thread.sleep(2000);
 		clickElement(SortByNameDescendingOrder_c);
+		takeScreenshot("Sorted By Name");
 		Thread.sleep(2000);
 		clickElement(Sortingoption_c);
 		Thread.sleep(2000);
 		clickElement(SortByPriceAscendingOrder_c);
+		takeScreenshot("Sorted by Price");
 		Thread.sleep(2000);
 
 

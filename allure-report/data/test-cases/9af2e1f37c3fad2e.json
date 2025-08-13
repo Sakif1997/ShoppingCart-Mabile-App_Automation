@@ -1,0 +1,185 @@
+{
+  "uid" : "9af2e1f37c3fad2e",
+  "name" : "scenario 2: Verify Catalog Dashbord appearedScencario 3: Verify Sort By name working or notScenario 4: Verify Sort By price working or not",
+  "fullName" : "TestCases.SortingOperation.sort",
+  "historyId" : "1ddc39a859baa7abe00d96c8c90c0d3f",
+  "time" : {
+    "start" : 1755088395143,
+    "stop" : 1755088529973,
+    "duration" : 134830
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755088370023,
+      "stop" : 1755088394844,
+      "duration" : 24821
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8880c204cdc2336b",
+      "name" : "Product Catalog",
+      "source" : "8880c204cdc2336b.png",
+      "type" : "image/png",
+      "size" : 1085595
+    }, {
+      "uid" : "a491f1fd02a791bb",
+      "name" : "Quantity added for 2nd product",
+      "source" : "a491f1fd02a791bb.png",
+      "type" : "image/png",
+      "size" : 778616
+    }, {
+      "uid" : "4560193a8bdeadb4",
+      "name" : "Quantity added for 3rd product",
+      "source" : "4560193a8bdeadb4.png",
+      "type" : "image/png",
+      "size" : 332207
+    }, {
+      "uid" : "416230cef40224c6",
+      "name" : "Quantity added for 5th product",
+      "source" : "416230cef40224c6.png",
+      "type" : "image/png",
+      "size" : 396156
+    }, {
+      "uid" : "fa34ccdea4a85b30",
+      "name" : "Cart Product list",
+      "source" : "fa34ccdea4a85b30.png",
+      "type" : "image/png",
+      "size" : 718572
+    }, {
+      "uid" : "6ba1c107fe976d05",
+      "name" : "Final Product list",
+      "source" : "6ba1c107fe976d05.png",
+      "type" : "image/png",
+      "size" : 545995
+    }, {
+      "uid" : "4823e9200d91b23a",
+      "name" : "Checkout Dashbord",
+      "source" : "4823e9200d91b23a.png",
+      "type" : "image/png",
+      "size" : 118035
+    }, {
+      "uid" : "d5047fd8f7df52ee",
+      "name" : "Check out informations",
+      "source" : "d5047fd8f7df52ee.png",
+      "type" : "image/png",
+      "size" : 111158
+    }, {
+      "uid" : "74a2c75e6ec31fbd",
+      "name" : "Payment Information Dashbord",
+      "source" : "74a2c75e6ec31fbd.png",
+      "type" : "image/png",
+      "size" : 166575
+    }, {
+      "uid" : "d3721a0194a1330f",
+      "name" : "Payment Information Taken",
+      "source" : "d3721a0194a1330f.png",
+      "type" : "image/png",
+      "size" : 143941
+    }, {
+      "uid" : "f3aa9f329c8ef4e5",
+      "name" : "Checkout Page",
+      "source" : "f3aa9f329c8ef4e5.png",
+      "type" : "image/png",
+      "size" : 742940
+    }, {
+      "uid" : "2c1e91bb6a67259",
+      "name" : "Checkout Ended",
+      "source" : "2c1e91bb6a67259.png",
+      "type" : "image/png",
+      "size" : 156341
+    }, {
+      "uid" : "585a50d723f2e9f9",
+      "name" : "logout",
+      "source" : "585a50d723f2e9f9.png",
+      "type" : "image/png",
+      "size" : 94818
+    }, {
+      "uid" : "51d99081bf85f936",
+      "name" : "logout Successful Mesage",
+      "source" : "51d99081bf85f936.png",
+      "type" : "image/png",
+      "size" : 104430
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 14,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755088530243,
+      "stop" : 1755088532234,
+      "duration" : 1991
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "testMethod",
+    "value" : "sort"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default suite"
+  }, {
+    "name" : "suite",
+    "value" : "Default test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "6988@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9af2e1f37c3fad2e.json",
+  "parameterValues" : [ ]
+}

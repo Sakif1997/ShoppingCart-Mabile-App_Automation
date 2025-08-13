@@ -1,0 +1,113 @@
+{
+  "uid" : "f0ebc4c2e7381d60",
+  "name" : "scenario 2: Verify Catalog Dashbord appearedScencario 3: Verify Sort By name working or notScenario 4: Verify Sort By price working or not",
+  "fullName" : "TestCases.SortingOperation.sort",
+  "historyId" : "1ddc39a859baa7abe00d96c8c90c0d3f",
+  "time" : {
+    "start" : 1755119594580,
+    "stop" : 1755119609477,
+    "duration" : 14897
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755119565487,
+      "stop" : 1755119583831,
+      "duration" : 18344
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1acf89634aeb6e98",
+      "name" : "Sorted By Name",
+      "source" : "1acf89634aeb6e98.png",
+      "type" : "image/png",
+      "size" : 951856
+    }, {
+      "uid" : "451016b424702aa0",
+      "name" : "Sorted by Price",
+      "source" : "451016b424702aa0.png",
+      "type" : "image/png",
+      "size" : 783800
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755119701134,
+      "stop" : 1755119701925,
+      "duration" : 791
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "testMethod",
+    "value" : "sort"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.SortingOperation"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "7288@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f0ebc4c2e7381d60.json",
+  "parameterValues" : [ ]
+}

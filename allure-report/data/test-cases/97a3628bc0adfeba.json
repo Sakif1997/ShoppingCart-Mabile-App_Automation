@@ -1,0 +1,137 @@
+{
+  "uid" : "97a3628bc0adfeba",
+  "name" : "Scenario 13: Checkout process\n1. Verify check Information taken clearly\n2. Verify Payment Information taken clearly\n3. Verify Place Order Successfully",
+  "fullName" : "TestCases.CheckOut.checkedOut",
+  "historyId" : "9608f5e692f2de1884f5834946024857",
+  "time" : {
+    "start" : 1755119658118,
+    "stop" : 1755119692674,
+    "duration" : 34556
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "SetupDriver",
+    "time" : {
+      "start" : 1755119565487,
+      "stop" : 1755119583831,
+      "duration" : 18344
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "34ccd2a09a811076",
+      "name" : "Checkout Dashbord",
+      "source" : "34ccd2a09a811076.png",
+      "type" : "image/png",
+      "size" : 118630
+    }, {
+      "uid" : "33daae409a34dd8a",
+      "name" : "Check out informations",
+      "source" : "33daae409a34dd8a.png",
+      "type" : "image/png",
+      "size" : 111717
+    }, {
+      "uid" : "925418a59c1f0e86",
+      "name" : "Payment Information Dashbord",
+      "source" : "925418a59c1f0e86.png",
+      "type" : "image/png",
+      "size" : 166860
+    }, {
+      "uid" : "ec21452af64aea7d",
+      "name" : "Payment Information Taken",
+      "source" : "ec21452af64aea7d.png",
+      "type" : "image/png",
+      "size" : 144357
+    }, {
+      "uid" : "8cb135b8643ff8",
+      "name" : "Checkout Page",
+      "source" : "8cb135b8643ff8.png",
+      "type" : "image/png",
+      "size" : 742843
+    }, {
+      "uid" : "3f6bb0bb7b099284",
+      "name" : "Checkout Ended",
+      "source" : "3f6bb0bb7b099284.png",
+      "type" : "image/png",
+      "size" : 157018
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1755119701134,
+      "stop" : 1755119701925,
+      "duration" : 791
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestCases.CheckOut"
+  }, {
+    "name" : "testClass",
+    "value" : "TestCases.CheckOut"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkedOut"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCases.CheckOut"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HCMDDC7"
+  }, {
+    "name" : "thread",
+    "value" : "7288@DESKTOP-HCMDDC7.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "97a3628bc0adfeba.json",
+  "parameterValues" : [ ]
+}

@@ -1,1 +1,136 @@
-{ }
+{
+  "da8bbb805b30000a6aab10d8f9d649bf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aac9001806bbd8d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755120719973,
+        "stop" : 1755120730817,
+        "duration" : 10844
+      }
+    } ]
+  },
+  "6c6ae87673f00be366f29b7b5f6a78ae" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "33b7d44df5270700",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755120747550,
+        "stop" : 1755120782776,
+        "duration" : 35226
+      }
+    } ]
+  },
+  "12c01c2c8f013431df74fd9cf517d8d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "592929ba5d6d9ee0",
+      "status" : "broken",
+      "statusDetails" : "Cannot invoke \"io.appium.java_client.android.AndroidDriver.findElement(org.openqa.selenium.By)\" because \"MobileConfig.DriverSetup.driver\" is null",
+      "time" : {
+        "start" : 1755039701235,
+        "stop" : 1755039701272,
+        "duration" : 37
+      }
+    } ]
+  },
+  "9608f5e692f2de1884f5834946024857" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ad8f84de80f8449b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755120798606,
+        "stop" : 1755120834510,
+        "duration" : 35904
+      }
+    } ]
+  },
+  "bd5bc7e6838190ffee0ff5bcf74fce80" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1970bf68fdfcf9a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755120834527,
+        "stop" : 1755120842576,
+        "duration" : 8049
+      }
+    } ]
+  },
+  "1ddc39a859baa7abe00d96c8c90c0d3f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b15194937c373108",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755120731017,
+        "stop" : 1755120747530,
+        "duration" : 16513
+      }
+    } ]
+  },
+  "2ff189d3b124bb9060a60eb0c51b3fda" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "12f858b0b3f35bdf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755120782789,
+        "stop" : 1755120798594,
+        "duration" : 15805
+      }
+    } ]
+  }
+}

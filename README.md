@@ -54,6 +54,30 @@ The following scenarios will be replicated:
 - **Android Emulator/Real Device** (Test execution)
 
 ---
+## 📋 Overview
+
+This project demonstrates complete automation of a demo mobile shopping cart application using the Page Object Model (POM) approach. The automation covers real-device execution, multiple scenario flows, parallel testing, and detailed reporting.
+
+- **Demo App Video Overview:**  
+  [Watch the app demo](https://drive.google.com/file/d/15wapjPyYa7c5TzbpSunLZ2iIETV-dIIV/view?usp=drive_link)
+
+- **Full Automation Run on Real Device:**  
+  [View real device test execution](https://drive.google.com/file/d/1zcW3fosA7LlsLnySfHOIf40k9g6l33gh/view?usp=drive_link)
+
+- **Scenario 1 to 7 Execution:**  
+  [See scenario flows in action](https://drive.google.com/file/d/1LIocCP2UiCzKEpx7ZSgUCZna-i0eJKL2/view?usp=drive_link)
+
+- **TestNG Parallel Test Execution:**  
+  [Parallel execution video](https://drive.google.com/file/d/1zcW3fosA7LlsLnySfHOIf40k9g6l33gh/view?usp=drive_link)
+
+- **Glimpse of Automation Code:**  
+  [Preview source code](https://drive.google.com/file/d/1ogJRuxeYo9wOdlaBdHwUvqCvR5YNCVTy/view?usp=drive_link)
+
+- **Check Report:**  
+  [Live report link](https://mydemomobileshopingapp.netlify.app/)  
+  [Report overview screenshot](https://drive.google.com/file/d/1C4Vwk9wPmNHOsXadmh6bLeEfoQoEkJb5/view?usp=drive_link)
+
+> These resources provide a complete walkthrough of the mobile app automation lifecycle, from initial overview to final test reports.
 
 ## 🚀 Getting Started
 

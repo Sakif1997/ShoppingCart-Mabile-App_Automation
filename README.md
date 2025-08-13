@@ -911,9 +911,61 @@ allure open ./allure-report
 ```
 * terminal gives us http to show us an allure report file directory
 
+## 📝 Allure Report Overview
 
-### Allure Report Overview Image
-#### Scenario 1 Cases  
+Allure reporting provides a detailed and interactive view of the automation test results, including pass/fail status, screenshots, execution graphs, and step-by-step descriptions for each scenario. Below are highlights from the latest Allure report:
+
+- **Live Allure Report:**  
+  [View Full Report](https://mydemomobileshopingapp.netlify.app/)
+
+---
+
+### 📊 Allure Report Samples
+
+#### **Report Dashboard Overview**
+![Allure Report Overview](https://drive.google.com/uc?id=1C4Vwk9wPmNHOsXadmh6bLeEfoQoEkJb5)
+> *Main dashboard showing test status and summary.*
+
+#### **Pass/Fail Graph**
+![Allure Report Graph](https://drive.google.com/uc?id=1c7qKLXNpkV1tOMB5dm6GPIZoDFapzklL)
+> *Graphical view of passed and failed test cases.*
+
+---
+
+### 🖼️ Scenario Screenshots
+
+#### **Login Operation**
+![Login Screenshot](https://drive.google.com/uc?id=1LGmYcrhOLhVbio6pyQPI7QeXrPLDv7-O)
+> *Screenshot of login test execution.*
+
+#### **Product Sorting**
+![Sorting Screenshot](https://drive.google.com/uc?id=1mnuHKMTXAblgSeLNoyiuOutt941kta9s)
+> *Validation of sorting functionality.*
+
+#### **Cart to Proceed**
+![Cart to Proceed Screenshot](https://drive.google.com/uc?id=1HZbghGdtmrochcIe4M5RXHKTj1_DajyS)
+> *Adding product to cart and proceeding.*
+
+#### **Checkout Flow**
+![Checkout Screenshot](https://drive.google.com/uc?id=1OxGffI9uWCogpxVSJtp8F3N_1IZGwIFw)
+> *Checkout and payment validation.*
+
+#### **Logout Operation**
+![Logout Screenshot](https://drive.google.com/uc?id=1ZH-GikBVjrijRyP1B4I5mPIyMLVQs_9v)
+> *User logout process.*
+
+---
+
+### 🗂️ Allure Report Features
+
+- **Step-by-step execution details** with screenshots for each step.
+- **Test status indicators:** Passed, Failed, Skipped.
+- **Error tracebacks and logs** for failed cases.
+- **Visual graphs** for test distribution and trends.
+- **Easy navigation** between scenarios and steps.
+
+For complete details and interactive test results, visit the [Allure report](https://mydemomobileshopingapp.netlify.app/).
+
 
 
 

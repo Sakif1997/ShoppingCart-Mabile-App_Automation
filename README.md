@@ -50,7 +50,7 @@ The following scenarios will be replicated:
 - **Appium** (Mobile application automation)
 - **Selenium** (User interface automation)
 - **TestNG** (Test orchestration)
-- **Extent Reports** (Reporting)
+- **Allure Reports** (Reporting)
 - **Android Emulator/Real Device** (Test execution)
 
 ---
@@ -156,12 +156,36 @@ adb shell dumpsys window | find "mCurrentFocus"
 ```
   
 Picture for demonstration  
-![App Demo Screenshot](https://drive.google.com/uc?id=1HGx6NbTC1yhzIxJSL1-L8oSokU-xmDo8)
+![App Demo Screenshot](https://drive.google.com/uc?id=1HGx6NbTC1yhzIxJSL1-L8oSokU-xmDo8)  
 
-  
-
-  
 Launch Appium Server Gui and Appium Inspector from the Appium Desktop application.  
 Fillup Remote Path and Desired Capabilities Following from CMD: Instructions showed in image  
-![Additional Demo Screenshot](https://drive.google.com/uc?id=1CfaOqvMdTjdI7IIekLwrDH4eHbbYZ4RB)
+![Additional Demo Screenshot](https://drive.google.com/uc?id=1CfaOqvMdTjdI7IIekLwrDH4eHbbYZ4RB)  
+
+This will help to Inspect elements of the mobile app.
+Picture for demonstration  
+![Additional Demo Inspect elelement](https://drive.google.com/uc?id=1IWueGmobZquZ8Fx-Ye2sOsW-xgSax_nP)  
+
+
+### Automation Part  
+---
+The following instructions will help you navigate those testing pages. As I am following the page object model, I will create some packages. At the package level, there is a list of classes where you can create methods, use methods for particular pages, and run and test the testing pages separately and parallelly as well.  
+
+1. Set Environment    
+i) pom.xml [dependencies set]  
+ii) DriverSetup[create separate package ]  
+
+2. Page Object Model: create methods, using methods for separate page and create test cases of those pages  
+i) Driver Control/setup [package name: MobileConfig]  
+ii) Methods and Page objects[package name: Utilities]  
+iii) TestCases [package name: TestCases ]  
+
+3. Create Allure report  
+i) pom.xml [dependencies set for allure report]  
+ii) Testng.xml [to run all test file togather]  
+My POM Look Like:  
+![packages](https://drive.google.com/uc?id=1Twi3jB6vN1q1J5_w0qoaCQ2zZeRShOk0)
+
+---
+
 

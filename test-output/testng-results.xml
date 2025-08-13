@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="10" total="16" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-13T18:58:13 BDT" name="Suite" finished-at="2025-08-13T19:00:28 BDT" duration-ms="135202">
+    <groups>
+    </groups>
+    <test started-at="2025-08-13T18:58:13 BDT" name="Test" finished-at="2025-08-13T19:00:28 BDT" duration-ms="135202">
+      <class name="TestCases.login">
+        <test-method is-config="true" signature="SetupDriver()[pri:0, instance:TestCases.login@74e28667]" started-at="2025-08-13T18:57:40 BDT" name="SetupDriver" finished-at="2025-08-13T18:58:13 BDT" duration-ms="32593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupDriver -->
+        <test-method signature="loggedIn()[pri:0, instance:TestCases.login@74e28667]" started-at="2025-08-13T18:58:13 BDT" name="loggedIn" description="Scenario 1: Verify login operation successfully" finished-at="2025-08-13T18:58:25 BDT" duration-ms="12203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggedIn -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.login@74e28667]" started-at="2025-08-13T19:00:28 BDT" name="quitDriver" finished-at="2025-08-13T19:00:30 BDT" duration-ms="2250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- TestCases.login -->
+      <class name="TestCases.LogOut">
+        <test-method signature="loggedOut()[pri:0, instance:TestCases.LogOut@75437611]" started-at="2025-08-13T19:00:18 BDT" name="loggedOut" description="Scenario 14: Verify Logout" finished-at="2025-08-13T19:00:28 BDT" duration-ms="9687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggedOut -->
+      </class> <!-- TestCases.LogOut -->
+      <class name="TestCases.AddToCart">
+        <test-method signature="AddProductToCart()[pri:0, instance:TestCases.AddToCart@712625fd]" started-at="2025-08-13T18:58:37 BDT" name="AddProductToCart" description="Scenario 5 to 7: Verify prodct correctly added to cart Queue" finished-at="2025-08-13T18:59:15 BDT" duration-ms="37793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToCart -->
+      </class> <!-- TestCases.AddToCart -->
+      <class name="TestCases.CartOperation">
+        <test-method signature="CartOperate()[pri:0, instance:TestCases.CartOperation@7bba5817]" started-at="2025-08-13T18:59:15 BDT" name="CartOperate" description="Scenario 8: Go to Cart
+Scenario 9: Decrease 1st Product
+Scenario 10: Increase 3rd Product
+Scenario 11: Delete 2nd Product
+Scenario 12: Proceed to checkout" finished-at="2025-08-13T18:59:34 BDT" duration-ms="18903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CartOperate -->
+      </class> <!-- TestCases.CartOperation -->
+      <class name="TestCases.SortingOperation">
+        <test-method signature="sort()[pri:0, instance:TestCases.SortingOperation@33065d67]" started-at="2025-08-13T18:58:25 BDT" name="sort" description="scenario 2: Verify Catalog Dashbord appearedScencario 3: Verify Sort By name working or notScenario 4: Verify Sort By price working or not" finished-at="2025-08-13T18:58:37 BDT" duration-ms="11628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sort -->
+      </class> <!-- TestCases.SortingOperation -->
+      <class name="TestCases.CheckOut">
+        <test-method signature="checkedOut()[pri:0, instance:TestCases.CheckOut@742ff096]" started-at="2025-08-13T18:59:34 BDT" name="checkedOut" description="Scenario 13: Checkout process
+1. Verify check Information taken clearly
+2. Verify Payment Information taken clearly
+3. Verify Place Order Successfully" finished-at="2025-08-13T19:00:18 BDT" duration-ms="44584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkedOut -->
+      </class> <!-- TestCases.CheckOut -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

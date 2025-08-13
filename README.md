@@ -186,6 +186,668 @@ ii) Testng.xml [to run all test file togather]
 My POM Look Like:  
 ![packages](https://drive.google.com/uc?id=1Twi3jB6vN1q1J5_w0qoaCQ2zZeRShOk0)
 
+##  Set Environment
+---
+Setting up dependencies on testing frameworks that will contain the testing process:  
+Create a Maven Project  
+Set pom.xml file   
+pom.xml file Code:  
+Set Under Dependencies
+```ruby
+     <dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>7.5</version>
+				<scope>test</scope>
+		</dependency>
+		<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-java</artifactId>
+				<version>3.141.59</version>
+		</dependency>
+		<!--  https://mvnrepository.com/artifact/io.appium/java-client  -->
+		<dependency>
+				<groupId>io.appium</groupId>
+				<artifactId>java-client</artifactId>
+				<version>7.6.0</version>
+		</dependency>
+		<!--  https://mvnrepository.com/artifact/org.apache.commons/commons-lang3  -->
+		<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.12.0</version>
+		</dependency>
+		<!--  https://mvnrepository.com/artifact/commons-io/commons-io  -->
+		<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.11.0</version>
+		</dependency>
+		<dependency>
+		<!--  https://mvnrepository.com/artifact/commons-validatorcommons-validator  -->
+				<groupId>commons-validator</groupId>
+				<artifactId>commons-validator</artifactId>
+				<version>1.7</version>
+				</dependency>
+		<dependency>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-testng</artifactId>
+				<version>2.19.0</version>
+		</dependency>
+```
+
+## BrowserControl/Setup
+---
+Create MobileConfig class under Package  
+The package will hold DriverSetup in which we run the automation Code 
+Inside DriverSetup Class:   
+MobileConfig.DriverSetup class is responsible for setting up and configuring the Appium AndroidDriver
+ * for mobile automation testing. It includes methods annotated with @BeforeSuite and @AfterSuite to be executed
+ * before and after the entire test suite, respectively.  
+"I prefer to connect my real device for test run to avoid emulator latency"
+
+
+
+```ruby
+package MobileConfig;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
+
+public class DriverSetup {
+	public static AndroidDriver<AndroidElement> driver;
+	@BeforeSuite
+	public void SetupDriver() throws MalformedURLException{
+		 DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+		 desiredCapabilities.setCapability("platformName", "Android");
+		 desiredCapabilities.setCapability("appium:appPackage", "com.saucelabs.mydemoapp.rn");
+		 desiredCapabilities.setCapability("appium:appActivity", "com.saucelabs.mydemoapp.rn.MainActivity");
+		 URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
+
+
+		 driver = new AndroidDriver<AndroidElement>(remoteUrl, desiredCapabilities);
+		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+	@AfterSuite
+	public void quitDriver() {
+		driver.quit();
+	}
+}
+```
+---
+## Page Object model  
+### Methods  
+Create a package that includes methods and Methods make it easier to implement parallel testing. My method page contains methods that cover more test scenarios in less time.  
+##### Methods and Usages:  
+* To retrieves a single AndroidElement based on the specified locator (By object).  
+```ruby
+public AndroidElement getElement(By locator) {
+		return driver.findElement(locator);
+	}
+```
+
+* To finds an element using the specified locator and performs a click action on it.  
+```ruby
+public void clickElement(By locator) {
+		getElement(locator).click();
+	}
+```
+* To finds an element using the specified locator and enters the provided text into the input field.  
+```ruby
+public void FieldValue(By locator,String text) {
+		getElement(locator).sendKeys(text);
+	}
+```
+* To waits for the visibility of the element identified by the specified locator. 
+```ruby
+public void WaitElementVisible(By locator) {
+		new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+	}
+``` 
+* To performs a scrolling action from one point to another on the mobile device screen.  
+```ruby
+public void Scrolling(int p1, int p2, int m1, int m2){
+		(new TouchAction<>(driver))
+		  .press(PointOption.point(p1, p2)).waitAction()
+		  .moveTo(PointOption.point(m1, m2))
+		  .release()
+		  .perform();
+	}
+```
+* To perform ScreenShot for Allure report to track desire testing screen location
+```ruby
+public void takeScreenshot(String name) {
+		Allure.addAttachment(name, new ByteArrayInputStream(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES)));
+	}
+```
+
+Combind Picture of My Methods:  
+![Method](https://drive.google.com/uc?id=1IP0z-Kf1wFrkGTntYkBvCglyYq1avBFy)  
+
+### Scenario Replication Classes
+
+### Targeted Scenario:  Customer Login Procedure  
+
+PackageName: Utilities  
+ClassName: LoginObjects  
+Overview of this class:  
+
+* The `LoginObjects` class contains the locators and methods necessary to perform the customer login procedure in a mobile application.    
+* This class extends the `Methods` class, inheriting reusable utilities for interacting with mobile elements.    
+* The login procedure involves accessing the menu, selecting the login option, entering valid credentials, and clicking the login button to authenticate.  
+
+Here, I build a class that has the xpaths and IDs required to produce scenarios.  
+"Those elements’ XPaths and IDs are inherited or captured from Appium Inspector."  
+
+
+```java
+package Utilities;
+
+import org.openqa.selenium.By;
+
+public class LoginObjects extends Methods {
+	public By Menubar_c = By.xpath("//android.view.ViewGroup[@content-desc=\"open menu\"]");
+	public By login_w_c = By.xpath("//android.view.ViewGroup[@content-desc=\"menu item log in\"]");
+	public By Username_in = By.xpath("//android.widget.EditText[@content-desc=\"Username input field\"]");// bob@example.com
+	public By Pass_in = By.xpath("//android.widget.EditText[@content-desc=\"Password input field\"]");//10203040
+	public By LoginButton_c = By.xpath("//android.view.ViewGroup[@content-desc=\"Login button\"]");
+	
+	public void Login() throws InterruptedException {
+		clickElement(Menubar_c);
+		WaitElementVisible(login_w_c);
+		clickElement(login_w_c);
+		Thread.sleep(2000);
+		FieldValue(Username_in, "bob@example.com");
+		FieldValue(Pass_in, "10203040");
+		Thread.sleep(2000);
+		clickElement(LoginButton_c);
+	}
+}
+```
+
+
+
+### Test Run of Customer Login Procedure
+
+PackageName: TestCases
+ClassName: login
+Overview of this TestCase class:
+
+* The test scenario is implemented in the `loggedIn` method, which calls the `Login` method from the `LoginObjects` class.
+* The `Login` method executes the required steps to interact with the app elements and perform the login process successfully.
+
+```java
+package TestCases;
+
+import org.testng.annotations.Test;
+import MobileConfig.DriverSetup;
+import Utilities.LoginObjects;
+
+public class login extends DriverSetup {
+	LoginObjects logg = new LoginObjects();
+	
+	@Test(description = "Scenario 1: Verify login operation successfully\r\n"
+			+ "\r\n"
+			+ "Given: Bob is on the home page after opening the mobile app\r\n"
+			+ "When: Bob opens the menu and selects the login option\r\n"
+			+ "And: Bob enters username 'bob@example.com' and password '10203040'\r\n"
+			+ "Then: Bob clicks the login button and successfully logs in")
+	public void loggedIn() throws InterruptedException {
+		logg.Login();
+	}
+}
+```
+
+
+
+### Targeted Scenario:  Product Sorting Procedure
+
+PackageName: Utilities
+ClassName: SortingConfiguration
+Overview of this class:
+
+* The `SortingConfiguration` class contains the locators and methods needed to perform product sorting in the mobile application.
+* This class extends the `Methods` class, inheriting common interaction utilities for mobile elements.
+* The sorting procedure includes opening the sort menu, selecting **Name (Descending)** order, then selecting **Price (Ascending)** order to verify sorting functionalities.
+
+Here, I build a class that has the XPaths required to produce scenarios.
+"Those elements’ XPaths are inherited or captured from Appium Inspector."  
+
+
+```java
+package Utilities;
+
+import org.openqa.selenium.By;
+
+public class SortingConfiguration extends Methods {
+	public By Sortingoption_c = By.xpath("//android.view.ViewGroup[@content-desc=\"sort button\"]");
+	public By SortByNameDescendingOrder_c = By.xpath("//android.view.ViewGroup[@content-desc=\"nameDesc\"]");
+	public By SortByPriceAscendingOrder_c = By.xpath("//android.view.ViewGroup[@content-desc=\"priceAsc\"]");
+	
+	public void Sorting() throws InterruptedException {
+		Thread.sleep(2000);
+		clickElement(Sortingoption_c);
+		Thread.sleep(2000);
+		clickElement(SortByNameDescendingOrder_c);
+		Thread.sleep(2000);
+		clickElement(Sortingoption_c);
+		Thread.sleep(2000);
+		clickElement(SortByPriceAscendingOrder_c);
+		Thread.sleep(2000);
+	}
+}
+```
+
+
+
+### Test Run of Product Sorting Procedure
+
+PackageName: TestCases
+ClassName: SortingOperation
+Overview of this TestCase class:
+
+* The test scenario is implemented in the `sort` method, which calls the `Sorting` method from the `SortingConfiguration` class.
+* The `Sorting` method performs the steps to sort products first by **Name (Descending)** and then by **Price (Ascending)** in the catalog dashboard.
+
+```java
+package TestCases;
+
+import org.testng.annotations.Test;
+import MobileConfig.DriverSetup;
+import Utilities.SortingConfiguration;
+
+public class SortingOperation extends DriverSetup {
+	
+	login lg = new login(); // parallel run placeholder
+	AddToCart ac = new AddToCart(); // parallel run placeholder
+	CartOperation CO = new CartOperation(); // parallel run placeholder
+	CheckOut cout = new CheckOut(); // parallel run placeholder
+	LogOut LoggedOut = new LogOut(); // parallel run placeholder
+	SortingConfiguration sort = new SortingConfiguration();
+	
+	@Test(description = "Scenario 2: Verify Catalog Dashboard appears\r\n"
+			+ "Scenario 3: Verify 'Sort By Name' functionality\r\n"
+			+ "Scenario 4: Verify 'Sort By Price' functionality")
+	public void sort() throws InterruptedException {
+		//lg.loggedIn();
+		sort.Sorting();
+		//ac.AddProductToCart();
+		//CO.CartOperate();
+		//cout.checkedOut();
+		//LoggedOut.loggedOut();
+	}
+}
+```
+
+### Targeted Scenario:  Add Multiple Products to Cart Procedure
+
+PackageName: Utilities
+ClassName: AddToCartObjects
+Overview of this class:
+
+* The `AddToCartObjects` class contains the locators and methods needed to automate adding multiple products to the shopping cart in the mobile application.
+* This class extends the `Methods` class, inheriting reusable functions for element interaction, waiting, scrolling, and screenshot capture.
+* The procedure covers selecting products from the catalog dashboard, adjusting their quantities, and adding them to the cart one by one.
+
+Here, I build a class that has the XPaths required to produce scenarios.
+"Those elements’ XPaths are inherited or captured from Appium Inspector."
+
+```java
+package Utilities;
+
+import org.openqa.selenium.By;
+
+public class AddToCartObjects extends Methods {
+	
+	// Second product elements
+	public By secondProduct_c = By.xpath("(//android.view.ViewGroup[@content-desc=\"store item\"])[2]");
+	public By secondProductDashbord_w = By.xpath("//android.view.ViewGroup[@content-desc=\"Add To Cart button\"]");
+	public By QuantityaddButton_c = By.xpath("//android.view.ViewGroup[@content-desc=\"counter plus button\"]");
+	public By AddToCart_c = By.xpath("//android.view.ViewGroup[@content-desc=\"Add To Cart button\"]");
+	
+	public By Menubar_c = By.xpath("//android.view.ViewGroup[@content-desc=\"open menu\"]");
+	public By catalogDashbord_c = By.xpath("//android.view.ViewGroup[@content-desc=\"menu item catalog\"]");
+
+	// Third product elements
+	public By ThirdProduct_c = By.xpath("(//android.view.ViewGroup[@content-desc=\"store item\"])[3]");
+	public By ThirdProductDashbord_w = By.xpath("//android.view.ViewGroup[@content-desc=\"Add To Cart button\"]");
+
+	// Fifth product elements
+	public By FifthProduct_c = By.xpath("(//android.view.ViewGroup[@content-desc=\"store item\"])[3]");
+	public By FifthProductDashbord_w = By.xpath("//android.view.ViewGroup[@content-desc=\"Add To Cart button\"]");
+	
+	public void addTocart(int productquantity_p1, int productquantity_p2) throws InterruptedException {
+		takeScreenshot("Product Catalog");
+		
+		// Second product
+		clickElement(secondProduct_c);
+		WaitElementVisible(secondProductDashbord_w);
+		for (int i = 1; i < productquantity_p1; i++) {
+			clickElement(QuantityaddButton_c);
+		}
+		takeScreenshot("Quantity added for 2nd product");
+		clickElement(AddToCart_c);
+		Thread.sleep(2000);
+		clickElement(Menubar_c);
+		Thread.sleep(2000);
+		clickElement(catalogDashbord_c);
+		
+		// Third product
+		clickElement(ThirdProduct_c);
+		WaitElementVisible(ThirdProductDashbord_w);
+		for (int i = 1; i < productquantity_p2; i++) {
+			clickElement(QuantityaddButton_c);
+		}
+		takeScreenshot("Quantity added for 3rd product");
+		clickElement(AddToCart_c);
+		Thread.sleep(2000);
+		clickElement(Menubar_c);
+		Thread.sleep(2000);
+		clickElement(catalogDashbord_c);
+		
+		// Fifth product
+		Thread.sleep(2000);
+		Scrolling(389, 1789, 774, 285);
+		clickElement(FifthProduct_c);
+		WaitElementVisible(FifthProductDashbord_w);
+		takeScreenshot("Quantity added for 5th product");
+		clickElement(AddToCart_c);
+		Thread.sleep(2000);
+		clickElement(Menubar_c);
+		Thread.sleep(2000);
+		clickElement(catalogDashbord_c);
+		Thread.sleep(2000);
+	}
+}
+```
+
+### Test Run of Add Multiple Products to Cart Procedure
+
+PackageName: TestCases
+ClassName: AddToCart
+Overview of this TestCase class:
+
+* The test scenario is implemented in the `AddProductToCart` method, which calls the `addTocart` method from the `AddToCartObjects` class.
+* The `addTocart` method automates adding the 2nd, 3rd, and 5th products to the cart, with configurable quantities for the 2nd and 3rd products.
+
+```java
+package TestCases;
+
+import org.testng.annotations.Test;
+import MobileConfig.DriverSetup;
+import Utilities.AddToCartObjects;
+
+public class AddToCart extends DriverSetup {
+	AddToCartObjects addcart = new AddToCartObjects();
+	
+	@Test(description = "Scenario 5 to 7: Verify products are correctly added to the cart queue")
+	public void AddProductToCart() throws InterruptedException {
+		// first parameter = quantity for 2nd product, second parameter = quantity for 3rd product
+		addcart.addTocart(3, 2);
+	}
+}
+```
+
+
+
+### Scenario Replication Classes
+
+### Targeted Scenario:  Cart Page Operations Procedure
+
+PackageName: Utilities
+ClassName: CartOperationElements
+Overview of this class:
+
+* The `CartOperationElements` class contains the locators and methods needed to perform operations on the cart page in the mobile application.
+* This class extends the `Methods` class, inheriting common interaction functions for clicking, waiting, scrolling, and capturing screenshots.
+* The procedure covers navigating to the cart, modifying product quantities, removing products, and proceeding to checkout.
+
+Here, I build a class that has the XPaths required to produce scenarios.
+"Those elements’ XPaths are inherited or captured from Appium Inspector."
+
+```java
+package Utilities;
+
+import org.openqa.selenium.By;
+
+public class CartOperationElements extends Methods {
+	public By Carticon_c = By.xpath("//android.view.ViewGroup[@content-desc=\"cart badge\"]");
+	public By CartlistPage_w = By.xpath("//android.view.ViewGroup[@content-desc=\"Proceed To Checkout button\"]");
+	
+	public By DecreseButton_1stpro_c = By.xpath("//android.view.ViewGroup[@content-desc=\"counter minus button\"]");
+	public By incresButton_3rdpro_c = By.xpath("(//android.view.ViewGroup[@content-desc=\"counter plus button\"])[2]");
+	public By RemoveIteam_2ndpro_c = By.xpath("(//android.view.ViewGroup[@content-desc=\"remove item\"])[1]");
+	public By ProceedToCheckout_button = By.xpath("//android.view.ViewGroup[@content-desc=\"Proceed To Checkout button\"]");
+	
+	public void cartpageOperation() throws InterruptedException {
+		clickElement(Carticon_c);
+		WaitElementVisible(CartlistPage_w);
+		Thread.sleep(2000);
+		takeScreenshot("Cart Product list");
+		Scrolling(650, 206, 234, 1541);
+		Thread.sleep(2000);
+		clickElement(DecreseButton_1stpro_c);
+		Scrolling(420, 1379, 647, 389);
+		clickElement(incresButton_3rdpro_c);
+		clickElement(RemoveIteam_2ndpro_c);
+		Thread.sleep(2000);
+		takeScreenshot("Final Product list");
+		clickElement(ProceedToCheckout_button);
+		Thread.sleep(2000);
+	}
+}
+```
+
 ---
 
+### Test Run of Cart Page Operations Procedure
+
+PackageName: TestCases
+ClassName: CartOperation
+Overview of this TestCase class:
+
+* The test scenario is implemented in the `CartOperate` method, which calls the `cartpageOperation` method from the `CartOperationElements` class.
+* The `cartpageOperation` method performs cart modification steps such as decreasing the quantity of the 1st product, increasing the quantity of the 3rd product, removing the 2nd product, and proceeding to checkout.
+
+```java
+package TestCases;
+
+import org.testng.annotations.Test;
+import MobileConfig.DriverSetup;
+import Utilities.CartOperationElements;
+
+public class CartOperation extends DriverSetup {
+	
+	CartOperationElements co = new CartOperationElements();
+
+	@Test(description = "Scenario 8: Go to Cart\r\n"
+			+ "Scenario 9: Decrease 1st Product\r\n"
+			+ "Scenario 10: Increase 3rd Product\r\n"
+			+ "Scenario 11: Delete 2nd Product\r\n"
+			+ "Scenario 12: Proceed to checkout")
+	public void CartOperate() throws InterruptedException {
+		co.cartpageOperation();
+	}
+}
+```
+
+### Targeted Scenario:  Checkout Process Procedure
+
+PackageName: Utilities
+ClassName: CheckOutOperation
+Overview of this class:
+
+* The `CheckOutOperation` class contains the locators and methods to automate the full checkout process in the mobile application.
+* This class extends the `Methods` class, inheriting reusable interaction utilities for waiting, clicking, filling fields, scrolling, and taking screenshots.
+* The procedure covers entering shipping information, proceeding to payment, filling payment details, reviewing the order, and placing it successfully.
+
+Here, I build a class that has the XPaths required to produce scenarios.
+"Those elements’ XPaths are inherited or captured from Appium Inspector."
+
+```java
+package Utilities;
+
+import org.openqa.selenium.By;
+
+public class CheckOutOperation extends Methods {
+	public By checkoutdashbord_w = By.xpath("//android.view.ViewGroup[@content-desc=\"To Payment button\"]");
+	public By Fullname_in = By.xpath("//android.widget.EditText[@content-desc=\"Full Name* input field\"]");
+	public By Address_in = By.xpath("//android.widget.EditText[@content-desc=\"Address Line 1* input field\"]");
+	public By city_in = By.xpath("//android.widget.EditText[@content-desc=\"City* input field\"]");
+	public By ZipCode_in = By.xpath("//android.widget.EditText[@content-desc=\"Zip Code* input field\"]");
+	public By Country_c = By.xpath("//android.widget.EditText[@content-desc=\"Country* input field\"]");
+	
+	public By ToProceedButton_c = By.xpath("//android.view.ViewGroup[@content-desc=\"To Payment button\"]");
+	public By ReviewOrder_w = By.xpath("//android.view.ViewGroup[@content-desc=\"Review Order button\"]");
+	public By CardUserName_in = By.xpath("//android.widget.EditText[@content-desc=\"Full Name* input field\"]");
+	public By CardNumber_in = By.xpath("//android.widget.EditText[@content-desc=\"Card Number* input field\"]");
+	public By ExparedDate_in = By.xpath("//android.widget.EditText[@content-desc=\"Expiration Date* input field\"]");
+	public By SecurityCode_in = By.xpath("//android.widget.EditText[@content-desc=\"Security Code* input field\"]");
+	public By ReviewOrderButton_c = By.xpath("//android.view.ViewGroup[@content-desc=\"Review Order button\"]");
+	
+	public By PlaceOrder_w_c = By.xpath("//android.view.ViewGroup[@content-desc=\"Place Order button\"]");
+	public By CheckoutPage_w = By.xpath("//android.view.ViewGroup[@content-desc=\"Continue Shopping button\"]");
+	
+	public void checkout() throws InterruptedException {
+		WaitElementVisible(checkoutdashbord_w);
+		takeScreenshot("Checkout Dashbord");
+		Scrolling(461, 1445, 650, 347);
+		Thread.sleep(2000);
+		FieldValue(Fullname_in, "Sakif");
+		FieldValue(Address_in, "Dhanmondi");
+		FieldValue(city_in, "Dhaka");
+		Thread.sleep(2000);
+		FieldValue(ZipCode_in, "1209");
+		FieldValue(Country_c, "Bangladesh");
+		takeScreenshot("Check out informations");
+		Thread.sleep(2000);
+		clickElement(ToProceedButton_c);
+		clickElement(ReviewOrder_w);
+		takeScreenshot("Payment Information Dashbord");
+		FieldValue(CardUserName_in, "Sakif");
+		FieldValue(CardNumber_in, "3432234356567878");
+		FieldValue(ExparedDate_in, "12/25");
+		FieldValue(SecurityCode_in, "123");
+		Thread.sleep(2000);
+		takeScreenshot("Payment Information Taken");
+		clickElement(ReviewOrderButton_c);
+		Thread.sleep(2000);
+		clickElement(ReviewOrderButton_c);
+		
+		WaitElementVisible(PlaceOrder_w_c);
+		takeScreenshot("Checkout Page");
+		Thread.sleep(2000);
+		clickElement(PlaceOrder_w_c);
+		WaitElementVisible(CheckoutPage_w);
+		Thread.sleep(2000);
+		takeScreenshot("Checkout Ended");
+	}
+}
+```
+
+---
+
+### Test Run of Checkout Process Procedure
+
+PackageName: TestCases
+ClassName: CheckOut
+Overview of this TestCase class:
+
+* The test scenario is implemented in the `checkedOut` method, which calls the `checkout` method from the `CheckOutOperation` class.
+* The `checkout` method executes the complete checkout workflow, including verifying checkout information, payment information, and placing the order successfully.
+
+```java
+package TestCases;
+
+import org.testng.annotations.Test;
+import MobileConfig.DriverSetup;
+import Utilities.CheckOutOperation;
+
+public class CheckOut extends DriverSetup {
+	CheckOutOperation cop = new CheckOutOperation();
+	
+	@Test(description = "Scenario 13: Checkout process\r\n"
+			+ "1. Verify checkout information is taken correctly\r\n"
+			+ "2. Verify payment information is taken correctly\r\n"
+			+ "3. Verify place order successfully")
+	public void checkedOut() throws InterruptedException {
+		cop.checkout();
+	}
+}
+```
+
+### Targeted Scenario:  Customer Logout Procedure
+
+PackageName: Utilities
+ClassName: logOutObjects
+Overview of this class:
+
+* The `logOutObjects` class contains the locators and methods to automate the logout process in the mobile application.
+* This class extends the `Methods` class, inheriting reusable utilities for element interaction, waiting, and capturing screenshots.
+* The logout procedure involves opening the menu, selecting the logout option, confirming the logout action, and verifying the success message.
+
+Here, I build a class that has the XPaths required to produce scenarios.
+"Those elements’ XPaths are inherited or captured from Appium Inspector."
+
+```java
+package Utilities;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class logOutObjects extends Methods {
+	public By Menubar_c = By.xpath("//android.view.ViewGroup[@content-desc=\"open menu\"]");
+	public By logout_c = By.xpath("//android.view.ViewGroup[@content-desc=\"menu item log out\"]");
+	public By LogoutPop_accept = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button[2]");
+	
+	@Test(description = "Scenario 14: Verify Logout")
+	public void logout() throws InterruptedException {
+		clickElement(Menubar_c);
+		Thread.sleep(2000);
+		takeScreenshot("logout");
+		clickElement(logout_c);
+		Thread.sleep(2000);
+		clickElement(LogoutPop_accept);
+		Thread.sleep(2000);
+		takeScreenshot("logout Successful Message");
+	}
+}
+```
+
+---
+
+### Test Run of Customer Logout Procedure
+
+PackageName: TestCases
+ClassName: LogOut
+Overview of this TestCase class:
+
+* The test scenario is implemented in the `loggedOut` method, which calls the `logout` method from the `logOutObjects` class.
+* The `logout` method executes all steps required to log out of the application and confirm the action.
+
+```java
+package TestCases;
+
+import org.testng.annotations.Test;
+import MobileConfig.DriverSetup;
+import Utilities.logOutObjects;
+
+public class LogOut extends DriverSetup {
+	logOutObjects lgot = new logOutObjects();
+	
+	@Test(description = "Scenario 14: Verify Logout")
+	public void loggedOut() throws InterruptedException {
+		lgot.logout();
+	}
+}
+```
 

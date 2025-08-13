@@ -850,4 +850,47 @@ public class LogOut extends DriverSetup {
 	}
 }
 ```
+---
+## Allure Report Creation
+
+To create an allure report, first set dependency in the pom.xml file.  
+```ruby
+        <dependency>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-testng</artifactId>
+				<version>2.19.0</version>
+		</dependency>
+```
+* Create some methods for allure report (like allure ScreenShot) which is added already
+```ruby
+public void takeScreenshot(String name) {
+		Allure.addAttachment(name, new ByteArrayInputStream(((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.BYTES)));
+	}
+```
+     
+* then run the testing.xml file  
+* then refresh the whole package and see a "allure-results" file created under Maven Dependencies  
+-after runing the testng.xml file and refresh the whole package allure reasult appear 
+![ConvertToTestNg](https://drive.google.com/uc?id=1OV8Po-2yAjKCQopmcccZcoY_Q3WwMsso)  
+Terminal image:  
+![Terminal](https://drive.google.com/uc?id=1b8WyHLH-inLgfFYmVaHdqzGc3wAA7ZH2)  
+
+
+* To get allure report open the whole package terminal  
+* then write in terminal to clean previous files>   
+```ruby
+allure generate ./allure-results --clean
+```
+
+* then write in terminal to create allure report>   
+```ruby
+allure open ./allure-report
+```
+* terminal gives us http to show us an allure report file directory
+
+
+### Allure Report Overview Image
+#### Scenario 1 Cases  
+
+
 
